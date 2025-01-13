@@ -8,7 +8,7 @@ Bu proje, sanayiler için hazırladığım araç tamir rezervasyonu sistemimin g
 - AspNetIdentity
 - Swagger
 - ApiConsume
-- RapidApi
+- RRESTful API
 - JsonWebToken
 - Authorization & Authentication
 - Login
@@ -20,13 +20,12 @@ Bu proje, sanayiler için hazırladığım araç tamir rezervasyonu sistemimin g
 - DTOLayer
 - AspNetCore MVC 8.0
 - EntityFrameworkCore
-- RepositoryDesignPattern
 - MailDoğrulamaİşlemleri
 
 
 ## Proje Hakkında
 
-Workin in progress...
+Working in progress...
 
 ## Utilizing the Repository
 

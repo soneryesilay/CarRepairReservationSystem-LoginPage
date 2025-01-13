@@ -33,7 +33,7 @@ Workin in progress...
 Clone the project: 
 
 ```bash
-git clone https://github.com/soneryesilay/Net-HotelApi-Project.git
+git clone https://github.com/soneryesilay/CarRepairReservationSystem-LoginPage.git
 ```
 Navigate to the project directory and compile/run the project:
 ```bash

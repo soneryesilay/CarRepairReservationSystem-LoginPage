@@ -1,0 +1,61 @@
+﻿@{
+    ViewData["Title"] = "Ana Sayfa";
+}
+
+<div class="container dashboard-container">
+    @if (User.Identity.IsAuthenticated)
+    {
+        <h1 class="dashboard-title">Hoş Geldiniz!</h1>
+        <p class="dashboard-subtitle">Araç servis randevu sisteminde neler yapmak istersiniz?</p>
+
+        <div class="row">
+            @if (User.IsInRole("Admin"))
+            {
+                <div class="col-md-4">
+                    <div class="dashboard-card">
+                        <h3><i class="bi bi-people me-2"></i>Kullanıcı Yönetimi</h3>
+                        <p>Sistemdeki kullanıcıları görüntüleyin, düzenleyin veya yeni kullanıcılar ekleyin.</p>
+                        <a asp-controller="User" asp-action="Index" class="btn btn-primary w-100">
+                            <i class="bi bi-arrow-right me-2"></i>Kullanıcıları Yönet
+                        </a>
+                    </div>
+                </div>
+            }
+
+            <div class="col-md-4">
+                <div class="dashboard-card">
+                    <h3><i class="bi bi-calendar-check me-2"></i>Randevu Yönetimi</h3>
+                    <p>Servis randevularınızı görüntüleyin, yeni randevu oluşturun veya mevcut randevularınızı düzenleyin.</p>
+                    <a asp-controller="Appointment" asp-action="Index" class="btn btn-primary w-100">
+                        <i class="bi bi-arrow-right me-2"></i>Randevuları Yönet
+                    </a>
+                </div>
+            </div>
+
+            <div class="col-md-4">
+                <div class="dashboard-card">
+                    <h3><i class="bi bi-car-front me-2"></i>Araç Yönetimi</h3>
+                    <p>Araçlarınızı görüntüleyin, yeni araç ekleyin veya mevcut araçlarınızı düzenleyin.</p>
+                    <a asp-controller="Vehicle" asp-action="Index" class="btn btn-primary w-100">
+                        <i class="bi bi-arrow-right me-2"></i>Araçları Yönet
+                    </a>
+                </div>
+            </div>
+        </div>
+    }
+    else
+    {
+        <div class="text-center py-5">
+            <h1 class="dashboard-title mb-4">Araç Servis Randevu Sistemine Hoş Geldiniz</h1>
+            <p class="dashboard-subtitle mb-4">Sistemi kullanabilmek için lütfen giriş yapın veya kayıt olun.</p>
+            <div class="d-flex justify-content-center gap-3">
+                <a asp-controller="Auth" asp-action="Login" class="btn btn-primary">
+                    <i class="bi bi-box-arrow-in-right me-2"></i>Giriş Yap
+                </a>
+                <a asp-controller="Auth" asp-action="Register" class="btn btn-success">
+                    <i class="bi bi-person-plus me-2"></i>Kayıt Ol
+                </a>
+            </div>
+        </div>
+    }
+</div>

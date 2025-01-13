@@ -1,0 +1,62 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 17
+VisualStudioVersion = 17.0.31903.59
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "src", "src", "{4AC7EBE7-7906-42A8-A87A-023BCD61E743}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "CarRepairReservation.Api", "src\CarRepairReservation.Api\CarRepairReservation.Api.csproj", "{893D0AAF-34A5-4A68-B95C-CF9AD90BD901}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "CarRepairReservation.Web", "src\CarRepairReservation.Web\CarRepairReservation.Web.csproj", "{DA403B7F-F805-47D5-88FC-9198DAA8101D}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "CarRepairReservation.Domain", "src\CarRepairReservation.Domain\CarRepairReservation.Domain.csproj", "{0B3EE6BD-DA59-4DC0-BCFD-01DD4E4E9A5E}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "CarRepairReservation.Application", "src\CarRepairReservation.Application\CarRepairReservation.Application.csproj", "{D8E56852-1F2E-4782-A5D0-2A04828C8F79}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "CarRepairReservation.Infrastructure", "src\CarRepairReservation.Infrastructure\CarRepairReservation.Infrastructure.csproj", "{66F70EFE-7159-4BD0-AEE5-CE56DE8BE60C}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "CarRepairReservation.Persistence", "src\CarRepairReservation.Persistence\CarRepairReservation.Persistence.csproj", "{AE858C07-B050-4EAA-B685-A371BB441B6D}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{893D0AAF-34A5-4A68-B95C-CF9AD90BD901}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{893D0AAF-34A5-4A68-B95C-CF9AD90BD901}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{893D0AAF-34A5-4A68-B95C-CF9AD90BD901}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{893D0AAF-34A5-4A68-B95C-CF9AD90BD901}.Release|Any CPU.Build.0 = Release|Any CPU
+		{DA403B7F-F805-47D5-88FC-9198DAA8101D}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{DA403B7F-F805-47D5-88FC-9198DAA8101D}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{DA403B7F-F805-47D5-88FC-9198DAA8101D}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{DA403B7F-F805-47D5-88FC-9198DAA8101D}.Release|Any CPU.Build.0 = Release|Any CPU
+		{0B3EE6BD-DA59-4DC0-BCFD-01DD4E4E9A5E}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{0B3EE6BD-DA59-4DC0-BCFD-01DD4E4E9A5E}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{0B3EE6BD-DA59-4DC0-BCFD-01DD4E4E9A5E}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{0B3EE6BD-DA59-4DC0-BCFD-01DD4E4E9A5E}.Release|Any CPU.Build.0 = Release|Any CPU
+		{D8E56852-1F2E-4782-A5D0-2A04828C8F79}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{D8E56852-1F2E-4782-A5D0-2A04828C8F79}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{D8E56852-1F2E-4782-A5D0-2A04828C8F79}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{D8E56852-1F2E-4782-A5D0-2A04828C8F79}.Release|Any CPU.Build.0 = Release|Any CPU
+		{66F70EFE-7159-4BD0-AEE5-CE56DE8BE60C}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{66F70EFE-7159-4BD0-AEE5-CE56DE8BE60C}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{66F70EFE-7159-4BD0-AEE5-CE56DE8BE60C}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{66F70EFE-7159-4BD0-AEE5-CE56DE8BE60C}.Release|Any CPU.Build.0 = Release|Any CPU
+		{AE858C07-B050-4EAA-B685-A371BB441B6D}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{AE858C07-B050-4EAA-B685-A371BB441B6D}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{AE858C07-B050-4EAA-B685-A371BB441B6D}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{AE858C07-B050-4EAA-B685-A371BB441B6D}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(NestedProjects) = preSolution
+		{893D0AAF-34A5-4A68-B95C-CF9AD90BD901} = {4AC7EBE7-7906-42A8-A87A-023BCD61E743}
+		{DA403B7F-F805-47D5-88FC-9198DAA8101D} = {4AC7EBE7-7906-42A8-A87A-023BCD61E743}
+		{0B3EE6BD-DA59-4DC0-BCFD-01DD4E4E9A5E} = {4AC7EBE7-7906-42A8-A87A-023BCD61E743}
+		{D8E56852-1F2E-4782-A5D0-2A04828C8F79} = {4AC7EBE7-7906-42A8-A87A-023BCD61E743}
+		{66F70EFE-7159-4BD0-AEE5-CE56DE8BE60C} = {4AC7EBE7-7906-42A8-A87A-023BCD61E743}
+		{AE858C07-B050-4EAA-B685-A371BB441B6D} = {4AC7EBE7-7906-42A8-A87A-023BCD61E743}
+	EndGlobalSection
+EndGlobal

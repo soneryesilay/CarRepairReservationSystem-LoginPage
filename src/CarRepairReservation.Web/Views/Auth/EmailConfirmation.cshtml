@@ -1,0 +1,66 @@
+@{
+    ViewData["Title"] = "Email Confirmation";
+    Layout = "_AuthLayout";
+}
+
+<div class="auth-container">
+    <div class="auth-box">
+        <div class="auth-header">
+            <h2>@ViewData["Title"]</h2>
+        </div>
+        <div class="auth-body text-center">
+            @if (ViewBag.IsSuccess == true)
+            {
+                <div class="success-animation mb-4">
+                    <i class="bi bi-check-circle-fill text-success" style="font-size: 4rem;"></i>
+                </div>
+                <h3 class="text-white mb-4">Email Verified!</h3>
+                <p class="text-muted mb-4">
+                    Your account has been successfully activated. You can now sign in.
+                </p>
+                <div class="d-grid">
+                    <a asp-action="Login" class="btn btn-primary">
+                        <i class="bi bi-box-arrow-in-right"></i> Sign in
+                    </a>
+                </div>
+            }
+            else
+            {
+                <div class="error-animation mb-4">
+                    <i class="bi bi-x-circle-fill text-danger" style="font-size: 4rem;"></i>
+                </div>
+                <h3 class="text-white mb-4">Verification Failed!</h3>
+                <p class="text-muted mb-4">
+                    Email verification failed. Please try again or request a new verification link.
+                </p>
+                <div class="d-grid gap-2">
+                    <form asp-action="ResendEmailConfirmation" method="post">
+                        <input type="hidden" name="email" value="@ViewBag.Email" />
+                        <button type="submit" class="btn btn-primary w-100" id="submitButton">
+                            <div class="spinner"></div>
+                            <span>
+                                <i class="bi bi-envelope"></i> Resend Verification Link
+                            </span>
+                        </button>
+                    </form>
+                    <a asp-action="Login" class="btn btn-outline-light">
+                        <i class="bi bi-arrow-left"></i> Back to Sign in
+                    </a>
+                </div>
+            }
+        </div>
+    </div>
+</div>
+
+@section Scripts {
+    <script>
+        var form = document.querySelector('form')
+        if (form) {
+            form.addEventListener('submit', function () {
+                var button = document.getElementById('submitButton')
+                button.classList.add('loading')
+                button.disabled = true
+            })
+        }
+    </script>
+} 

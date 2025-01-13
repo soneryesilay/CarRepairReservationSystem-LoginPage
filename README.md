@@ -19,7 +19,7 @@ Bu proje, sanayiler için hazırladığım araç tamir rezervasyonu sistemimin g
 - DTOLayer
 - AspNetCore MVC 8.0
 - EntityFrameworkCore
-- MailDoğrulamaİşlemleri
+- eMailValidation
 
 
 ## Proje Hakkında

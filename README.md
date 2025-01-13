@@ -2,7 +2,7 @@
 
 Bu proje, sanayiler için hazırladığım araç tamir rezervasyonu sistemimin giriş bölümünü içermektedir.
 
-## Eğitim İçeriği
+## Proje İçeriği
 
 - AspNetCoreApi
 - AspNetIdentity

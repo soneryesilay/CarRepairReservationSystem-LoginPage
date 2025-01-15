@@ -5,7 +5,7 @@ Bu proje, sanayiler için hazırladığım araç tamir rezervasyonu sistemimin g
 ## Proje İçeriği
 
 - AspNetCoreApi
-- AspNetIdentity
+- Identity
 - Swagger
 - RESTful API
 - JsonWebToken

@@ -1,4 +1,4 @@
-# Car Repair Reservation System - Register&Login
+# Car Repair Reservation System
 
 Bu proje, sanayiler için hazırladığım araç tamir rezervasyonu sistemimin giriş bölümünü içermektedir.
 
